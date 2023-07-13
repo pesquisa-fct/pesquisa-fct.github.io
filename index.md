@@ -19,7 +19,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 # Tese
 - [2015 - Estabilidade numérica em escoamentos viscoelásticos com alto número de Weissenberg (ICMC/USP)](materiais/2015_Irineu_Qualificacao_Doutorado.pdf)
-- [2019 - Análise numérica de escoamentos com singularidades (ICMC/USP)](materiais/2019_IrineuLopesPalharesJunior_revisida.pdf)
+- [2019 - Análise numérica de escoamentos com singularidades (ICMC/USP)](materiais/2019_IrineuLopesPalharesJunior_revisada.pdf)
 
 # Projetos
 
