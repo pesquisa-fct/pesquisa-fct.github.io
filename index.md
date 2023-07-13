@@ -4,57 +4,24 @@ As informações sobre a oferta da disciplina no período 2020.2 podem ser lidas
 # Contato
 Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
-# Planos de Ensino
-Os planos de ensino estão divididos por cursos:
-
-## Cálculo I
-- [Engenharia Ambiental](materiais/Plano_Ensino_CalculoI_EngAmbiental.pdf)
-- [Estatística](materiais/Plano_Ensino_CalculoI_Estatistica.pdf)
-- [Química](materiais/Plano_Ensino_CalculoI_LicQuimica.pdf)
-- [Física](materiais/Plano_Ensino_CalculoI_LicFisica.pdf)
-
-# Notas de Aula
-As Notas de Aula são o material principal para o acompanhamento da disciplina. Elas foram escritas pelo professor Irineu Palhares.
-
-Arquivo das Notas de Aula:
-- Notas de Aula - Cálculo: Consultar livros de Cálculo 1, tais como Guidorizzi, Stewart e Thomas.
-
-# Slides
-Arquivos dos slides usados em aula:
-
-## Cálculo I
-- [CA01 - Limite e Continuidade](materiais/CA01_Limite_Continuidade.pdf)
-- [CA02 - Funções Logaritmicas e Exponenciais](materiais/CA02_Funcoes_Logaritmicas_Exponenciais.pdf)
-- [CA03 - Derivada](materiais/CA02_Derivadas.pdf)
-- [CA04 - Aplicações da Derivada](materiais/CA03_Aplicacoes_Derivada.pdf)
-- [CA05 - Integral Indefinida](materiais/CA04_Integral_Indefinida.pdf)
-- [CA06 - Integral Definida](materiais/CA05_Integral_Definida.pdf) 
-
-# Listas de Exercícios
-Arquivos das listas de exercícios:
-
-## Cálculo I
-- [CA01 - Limite e Continuidade](materiais/CA01_Lista_Limite_Continuidade.pdf)
-- [CA02 - Derivadas](materiais/CA02_Lista_Derivadas.pdf)
-- [CA03 - Aplicações das derivadas](materiais/CA03_Lista_AplicacoesDerivadas.pdf)
-- [CA04 - Integral Indefinida](materiais/Lista_Integral_Indefinida.pdf)
-- [CA05 - Integral Definida](materiais/CA05_Lista_Integral_Definida.pdf)
+# Artigos
+- [2016 - Numerical study of the square-root conformation tensor formulation for confined and free-surface viscoelastic fluid flows](materiais/2016_Square_Root_Stabilization.pdf)
+- [2017 - Stresses of PTT, Giesekus, and Oldroyd-B fluids in a Newtonian velocity field near the stick-slip singularity](materiais/2017_Stick_Slip_Asymptotic_OldB_Newtonian.pdf)
+- [2019 - Numerical study of the stress singularity in stick-slip flow of the Phan-Thien Tanner and Giesekus fluids](materiais/2019_Stick_Slip_Numerics.pdf)
+- [2020 - Testing viscoelastic numerical schemes using the Oldroyd-B fluid in Newtonian kinmatics](materiais/2020_OldB_Newtonian_Velocity.pdf)
+- [2022 - Numerical verification of sharp corner behavior for Giesekus and Phan-Thien Tanner fluids](materiais/2022_Numerical_Verification.pdf)
 
 
-# Monitorias
+# Eventos
 
-## Cálculo I
+# Dissertação
+- [2014 - Decomposições matriciais para escoamentos viscoelásticos incompressíveis](materiais/2014_Irineu_Minha_Dissertacao.pdf)
 
-Horários de atendimento:
+# Tese
+- [2015 - Estabilidade numérica em escoamentos viscoelásticos com alto número de Weissenberg (ICMC/USP)](materiais/2015_Irineu_Qualificacao_Doutorado.pdf)
+- [2019 - Análise numérica de escoamentos com singularidades (ICMC/USP)](materiais/2019_IrineuLopesPalharesJunior_revisida.pdf)
 
-| Horários     | Segunda |   Terça  | Quarta |  Quinta  |   Sexta  | Sábado | 
-|--------------|:-------:|:--------:|:------:|:--------:|:--------:|:------:|
-| 07:00--09:00 |         |          |        |          |          |        |
-| 09:00--11:00 |         |          |        |          |          |        |
-| 14:00--15:30 |         | Nathan (Sala 11, Disc. 1) | Nathan (Sala 11, Disc. 1) |          |          |       |
-| 16:00--18:00 |         |          |        |          |          |        |
-| 18:00--19:30 |         |          |        | Gabriel (Sala 24, Disc. 1) | Gabriel (Sala 24, Disc. 1) |       |
-| 20:00--22:00 |         |          |        |          |          |        |
+# Projetos
 
 --- -->
 Encontrou algum erro ou tem alguma sugestão? Por favor, comunique-nos mandando um e-mail para o endereço [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br) com a sua contribuição e identificação com nome e turma. Agradecemos a sua colaboração.
