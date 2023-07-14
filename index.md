@@ -14,10 +14,10 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 # Eventos
 
-## Apresentação
+## Apresentações
 - [2023 - Asymptotic and numerical investigations on viscoleastic fluid flows. 14th ISAAC](materiais/2014_14thISAAC.pdf)
 
-## Certificado
+## Certificados
 
 # Dissertação
 - [2014 - Decomposições matriciais para escoamentos viscoelásticos incompressíveis](materiais/2014_Irineu_Minha_Dissertacao.pdf)
