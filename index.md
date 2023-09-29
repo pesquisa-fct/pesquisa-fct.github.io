@@ -57,6 +57,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 ## Funções auxiliares
 - [Norma, Multiplicação de matriz, Determinante, ect. (Arquivo.c)](materiais/FuncoesAuxiliares.c)
+- [Norma, Multiplicação de matriz, Determinante, ect. (Arquivo.h)](materiais/FuncoesAuxiliares.h)
 
 ## Funções de visualização
 
