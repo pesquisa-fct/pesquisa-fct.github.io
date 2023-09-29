@@ -28,5 +28,32 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 # Projetos
 
+# Códigos
+- [Arquivo main.c](materiais/main.c)
+- [Makefile](/materiais/makefile)
+  
+## Solução de sistemas lineares
+- [Decomposição LU (Arquivo.c)](materiais/LUdecomposition.c)
+- [Decomposição LU (Arquivo.h)](materiais/LUdecomposition.h)
+- [Sistemas Triangulares (Arquivo.c)](materiais/SistemasTriangulares.c)
+- [Sistemas Triangulares (Arquivo.c)](materiais/SistemasTriangulares.c)
+- [Eliminação de Gauss (Arquivo.c)](materiais/GaussianElimination.c)
+- [Eliminação de Gauss (Arquivo.h)](materiais/GaussianElimination.h)
+- [Sobre-Relaxação Sucessiva (Arquivo.c)](materiais/SOR.c)
+- [Sobre-Relaxação Sucessiva (Arquivo.h)](materiais/SOR.h)
+- [Gradientes (Arquivo.c)](materiais/GradientMethod.c)
+- [Gradientes (Arquivo.h)](materiais/GradientMethod.h)
+- [Gradientes Conjugados (Arquivo.c)](materiais/ConjugateGradientMethod.c)
+- [Gradientes Conjugados (Arquivo.h)](materiais/ConjugateGradientMethod.h)
+  
+## Cálculo de autovalores e autovetores
+- [Potencia (Inversa e com Deslocamento) (Arquivo.c)](materiais/MetodoPotencia.c)
+- [Potencia (Inversa e com Deslocamento) (Arquivo.h)](materiais/MetodoPotencia.h)
+
+## Funções auxiliares
+- [Norma, Multiplicação de matriz, Determinante, ect. (Arquivo.c)](materiais/FuncoesAuxiliares.c)
+
+## Funções de visualização
+
 --- -->
 Encontrou algum erro ou tem alguma sugestão? Por favor, comunique-nos mandando um e-mail para o endereço [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br) com a sua contribuição e identificação com nome e turma. Agradecemos a sua colaboração.
