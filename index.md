@@ -41,7 +41,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [Decomposição LU (Arquivo.c)](materiais/LUdecomposition.c)
 - [Decomposição LU (Arquivo.h)](materiais/LUdecomposition.h)
 - [Sistemas Triangulares (Arquivo.c)](materiais/SistemasTriangulares.c)
-- [Sistemas Triangulares (Arquivo.c)](materiais/SistemasTriangulares.c)
+- [Sistemas Triangulares (Arquivo.h)](materiais/SistemasTriangulares.h)
 - [Eliminação de Gauss (Arquivo.c)](materiais/GaussianElimination.c)
 - [Eliminação de Gauss (Arquivo.h)](materiais/GaussianElimination.h)
 - [Sobre-Relaxação Sucessiva (Arquivo.c)](materiais/SOR.c)
