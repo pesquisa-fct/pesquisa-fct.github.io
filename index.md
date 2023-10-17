@@ -15,7 +15,8 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 # Eventos
 
 ## Apresentações
-- [2023 - Asymptotic and numerical investigations on viscoleastic fluid flows. 14th ISAAC](materiais/2023_14thISAAC.pdf)
+- [2023 - Asymptotic and numerical investigations on viscoleastic fluid flows. 14th ISAAC - Ribeirão Preto, SP](materiais/2023_14thISAAC.pdf)
+- [2023 - Numerical and asymptotic study of stresses of PTT, Giesekus and Oldroyd-B near the stick-slip singularity. IWANASP 2023 - Régua, Portugal](materiais/IWANASP_2023.pdf)
 
 ## Certificados
 
