@@ -33,6 +33,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [2022 - Estudo comparativo de métodos numéricos para sistemas lineares aplicados ao escoamento Newtoniano em uma cavidade bidimensional. Antônio Matheus da Silva Pontes (IMD/UFRN)](materiais/2022_AntonioMatheusPontes.pdf)
 - [2022 - Desenvolvimento de metodologias educacionais ativas com o microcontrolador Arduino no ensino de matemática. Silvia Goes Fernandes (IMD/UFRN)](materiais/2022_Arduino.pdf)
 - [2023 - Análise de escoamentos em uma contração 4:1 por meio da formulação corrente-vorticidade. Larissa Vitória Ribeiro de Andrade (FCT/UNESP)](materiais/PlanoTrabalhoIC.pdf)
+### Código para a solução do problema da contração por meio da formulação corrente-vorticidade.
 
 # Códigos
 - [Arquivo main.c](materiais/main.c)
