@@ -41,8 +41,8 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [Método de Gauss-Seidel (Arquivo.h)](2023_Larissa_IC/GaussSeidel.h)
 - [Funções Auxiliares (Arquivo.c)](2023_Larissa_IC/FuncoesAuxiliares.c)
 - [Funções Auxiliares (Arquivo.h)](2023_Larissa_IC/FuncoesAuxiliares.h)
-- [Função para criação dos arquivos VTK (Arquivo.c)](2023_Larissa_IC/FuncoesAuxiliares.c)
-- [Função para criação dos arquivos VTK (Arquivo.h)](2023_Larissa_IC/FuncoesAuxiliares.h)
+- [Função para criação dos arquivos VTK (Arquivo.c)](2023_Larissa_IC/Visualizacao.c)
+- [Função para criação dos arquivos VTK (Arquivo.h)](2023_Larissa_IC/Visualizacao.h)
 - [Arquivo makefile](2023_Larissa_IC/makefile)
 
 # Códigos
