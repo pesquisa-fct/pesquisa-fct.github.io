@@ -34,7 +34,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [2022 - Desenvolvimento de metodologias educacionais ativas com o microcontrolador Arduino no ensino de matemática. Silvia Goes Fernandes (IMD/UFRN)](materiais/2022_Arduino.pdf)
 - [2023 - Análise de escoamentos em uma contração 4:1 por meio da formulação corrente-vorticidade. Larissa Vitória Ribeiro de Andrade (FCT/UNESP)](materiais/PlanoTrabalhoIC.pdf)
 ### Código para a solução do problema da contração por meio da formulação corrente-vorticidade.
-- [Arquivo main (Arquivo.c)](materiais/main.c)
+- [Arquivo main (Arquivo.c)](2023_Larissa_IC/main.c)
 - [Método dos Gradientes Conjugados (Arquivo.c)](2023_Larissa_IC/ConjugateGradientMethod.c)
 - [Método dos Gradientes Conjugados (Arquivo.h)](2023_Larissa_IC/ConjugateGradientMethod.h)
 - [Método de Gauss-Seidel (Arquivo.c)](2023_Larissa_IC/GaussSeidel.c)
