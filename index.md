@@ -44,6 +44,9 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [Função para criação dos arquivos VTK (Arquivo.c)](2023_Larissa_IC/Visualizacao.c)
 - [Função para criação dos arquivos VTK (Arquivo.h)](2023_Larissa_IC/Visualizacao.h)
 - [Arquivo makefile](2023_Larissa_IC/makefile)
+- [Arquivo para criação dos slopes (Slopes.c)](2023_Larissa_IC/Slopes.c)
+- [Plote das figuras (Figures.py)](2023_Larissa_IC/Figures.py)
+- [Pós-processamento dos arquivos vtk (PosProcessamento.c)](2023_Larissa_IC/PosProcessamento.c)
 
 # Códigos
 - [Arquivo main.c](materiais/main.c)
