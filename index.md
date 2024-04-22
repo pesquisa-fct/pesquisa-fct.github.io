@@ -11,6 +11,9 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [2017 - Stresses of PTT, Giesekus, and Oldroyd-B fluids in a Newtonian velocity field near the stick-slip singularity](materiais/2017_Stick_Slip_Asymptotic_OldB_Newtonian.pdf)
 - [2016 - Numerical study of the square-root conformation tensor formulation for confined and free-surface viscoelastic fluid flows](materiais/2016_Square_Root_Stabilization.pdf)
 
+# Livros
+- [2023 - Numerical and asymptotic study of stresses of PTT, Giesekus and Oldroyd-B near the stick-slip singularity. IWANASP 2023 - Régua, Portugal](materiais/2023_IWANASP_Book.pdf)
+
 # Eventos
 
 ## Apresentações
