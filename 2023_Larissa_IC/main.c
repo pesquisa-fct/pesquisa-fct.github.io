@@ -47,7 +47,7 @@ int main(){
 	//M1 (dx=dy=0.1):	0
 	//M2 (dx=dy=0.05):	1
 	//M3 (dx=dy=0.025):	2
-	Malha = 0;
+	Malha = 2;
 	switch (Geometria){
 		case 0:
 			//4L x 4L
@@ -232,7 +232,7 @@ int main(){
 	for (n=0; n<Nt; n++){
 		t[n+1] = t[n] + dt;
 	}
-	printf("\n Apos discretizacao do dominio \n");
+	//printf("\n Apos discretizacao do dominio \n");
 
 	//-------------------------------------
 	n=0;
@@ -271,7 +271,7 @@ int main(){
 	
 	//OUTFLOW:
 	//-------------------------------------
-	printf("\n Apos condicoes de contorno \n");
+	//printf("\n Apos condicoes de contorno \n");
 	for (i=0; i<=Nx; i++){
 		//x0:
 		if ( fabs(x[i] - x0) < 1.0e-06 ){
@@ -537,6 +537,7 @@ int main(){
 			}
 		}
 		//bloco 2:
+		//printf("Bloco 2:\n");
 		for (i=im; i<ie; i++){
 			for (j=jm1+1; j<jm2; j++){
 				
@@ -610,11 +611,11 @@ int main(){
 			}
 		}
 
-
+		//printf("Condicoes de contorno para psi\n");
 		//################################################################
 		//Sol. Eq. Poisson:
 		//################################################################
-		//_______________________________________
+		//_______________________________________2
 		//Atualiza condicao de contorno para psi:		
 		//PAREDE VERTICAL ESQUERDA (INFLOW):
 		i=i0;
@@ -668,6 +669,7 @@ int main(){
 			psiOld[i][j] = psiOld[i-1][j];
 			psiNew[i][j] = psiNew[i-1][j];
 		}
+		/*
 		//________________________________________________________________
 		//Inicializa matriz dos coeficientes A, vetor b e chute inicial (tbm soluÃ§Ã£o) s:
 		for (i=0; i<dim; i++){
@@ -677,7 +679,7 @@ int main(){
 				A[i][j] = 0.0;
 			}
 		}
-
+		*/
 		/*		
 		//_______________________________________________________
 		//Monta matriz dos coeficientes A e vetor independente b:
@@ -780,11 +782,12 @@ int main(){
 		}
 		*/
 
-			
+		
 		//Explicit calculation
+		//printf("Calculo de psi:\n");
 		beta2 = (dx/dy)*(dx/dy);
 		aux = 1.0/( 2.0*(1 + beta2) );
-		for (p=0; p<dim; p++){
+		for (p=0; p<dim; p++){			
 			//printf("%f\n", s[p]);getchar();
 			i=vec[p].i;
 			j=vec[p].j;
