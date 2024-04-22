@@ -15,10 +15,12 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 # Eventos
 
 ## Apresentações
+- [2022 - Análise numérica de escoamentos viscoelásticos com singularidades. IV CBJME - João Pessoa, Paraíba](materiais/2022_IV_CBJME_Apresentacao.pdf)
 - [2023 - Asymptotic and numerical investigations on viscoleastic fluid flows. 14th ISAAC - Ribeirão Preto, SP](materiais/2023_14thISAAC.pdf)
 - [2023 - Numerical and asymptotic study of stresses of PTT, Giesekus and Oldroyd-B near the stick-slip singularity. IWANASP 2023 - Régua, Portugal](materiais/IWANASP_2023.pdf)
 
 ## Certificados
+- [2022 - Análise numérica de escoamentos viscoelásticos com singularidades. IV CBJME - João Pessoa, Paraíba](materiais/2022_IV_CBJME_Certificado.pdf)
 
 # Dissertação
 - [2014 - Decomposições matriciais para escoamentos viscoelásticos incompressíveis](materiais/2014_Irineu_Minha_Dissertacao.pdf)
