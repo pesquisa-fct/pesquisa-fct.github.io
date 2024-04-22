@@ -14,7 +14,7 @@ typedef struct Indices {
 int main(){
 
 	double t0, tf, x0, xf, y0, yf;
-	double xm, ymDown, ymUp;
+	double xm, ymDown, ymUp, ym;
 	int Nt, Nx, Ny;
 	int Geometria, Malha;
 
@@ -42,12 +42,12 @@ int main(){
 	//4L x 4L:	0
 	//8L x 8L:	1
 	//16L x 16L:	2
-	Geometria = 0;
+	Geometria = 1;
 	//Malhas:
 	//M1 (dx=dy=0.1):	0
 	//M2 (dx=dy=0.05):	1
 	//M3 (dx=dy=0.025):	2
-	Malha = 1;
+	Malha = 0;
 	switch (Geometria){
 		case 0:
 			//4L x 4L
@@ -58,6 +58,7 @@ int main(){
 			ymDown=1.5;
 			ymUp=2.5;
 			yf=4.0;
+			ym = 0.5*(yf+y0);
 			switch(Malha){
 				case 0:
 					//Malha M1: dx=dy=0.1
@@ -89,6 +90,7 @@ int main(){
 			ymDown=3.0;
 			ymUp=5.0;
 			yf=8.0;
+			ym = 0.5*(yf+y0);
 
 			switch(Malha){
 				case 0:
@@ -121,6 +123,7 @@ int main(){
 			ymDown=3.0;
 			ymUp=5.0;
 			yf=8.0;
+			ym = 0.5*(yf+y0);
 
 			switch(Malha){
 				case 0:
@@ -251,12 +254,18 @@ int main(){
 	c = 0.0;
 	for (j=0; j<=Ny; j++){
 		//printf("j=%d\n", j);
-		uOld[i][j] = uNew[i][j] = -(3.0/32.0)*( y[j] - 4.0 )*y[j];
+		//uOld[i][j] = uNew[i][j] = -(3.0/32.0)*( y[j] - 4.0 )*y[j];
+		uOld[i][j] = uNew[i][j] = -(3.0/(8.0*(ym*ym)))*( y[j] - yf )*y[j];//Generalizado - 22/04/2024
 		vOld[i][j] = vNew[i][j] = 0.0;
-		psiOld[i][j] = psiNew[i][j] = -(1.0/32.0)*y[j]*y[j]*y[j] + (3.0/16.0)*y[j]*y[j] + c;
+		//psiOld[i][j] = psiNew[i][j] = -(1.0/32.0)*y[j]*y[j]*y[j] + (3.0/16.0)*y[j]*y[j] + c;
+		psiOld[i][j] = psiNew[i][j] = -(3.0/(8.0*(ym*ym)))*( (y[j]/3.0) - (yf/2.0) )*y[j]*y[j] + c;//Generalizado - 22/04/2024
+
 		//psiOld[i][j] = psiOld[i+1][j] + dy*uOld[i][j];
 		//psiNew[i][j] = psiNew[i+1][j] + dy*uNew[i][j];
-		omegaOld[i][j] = omegaNew[i][j] = (3.0/16.0)*y[j] - (3.0/8.0);
+		//omegaOld[i][j] = omegaNew[i][j] = (3.0/16.0)*y[j] - (3.0/8.0);
+		omegaOld[i][j] = omegaNew[i][j] = -(3.0/(8.0*(ym*ym)))*( 2.0*y[j] - yf );//Generalizado - 22/04/2024
+
+
 	}
 	//PAREDES:
 	
@@ -616,14 +625,14 @@ int main(){
 		//PAREDE HORIZONTAL SUPERIOR:
 		j=je;
 		for (i=1; i<=im; i++){
-			psiOld[i][j] = psiNew[i][j] = y[j]/4.0;
+			psiOld[i][j] = psiNew[i][j] = -(3.0/(8.0*(ym*ym)))*( (yf/3.0) - (yf/2.0) )*yf*yf + c;
 			//psiOld[i][j] = 2.0*psiOld[i][j-1] - 1.0*psiOld[i][j-2];
 			//psiNew[i][j] = 2.0*psiNew[i][j-1] - 1.0*psiNew[i][j-2];
 
 		}
 		j=jm2;
 		for (i=im; i<=ie; i++){
-			psiOld[i][j] = psiNew[i][j] = 1.0;//y[j]/4.0;
+			psiOld[i][j] = psiNew[i][j] = -(3.0/(8.0*(ym*ym)))*( (yf/3.0) - (yf/2.0) )*yf*yf + c;
 			//psiOld[i][j] = psiOld[i][j-1];
 			//psiNew[i][j] = psiNew[i][j-1];
 
@@ -631,25 +640,25 @@ int main(){
 		//PAREDE HORIZONTAL INFERIOR:
 		j=j0;
 		for (i=1; i<=im; i++){
-			psiOld[i][j] = psiNew[i][j] = y[j]/4.0;
+			psiOld[i][j] = psiNew[i][j] = -(3.0/(8.0*(ym*ym)))*( (y0/3.0) - (y0/2.0) )*y0*y0 + c;
 			//psiOld[i][j] = psiOld[i][j+1];
 			//psiNew[i][j] = psiNew[i][j+1];
 		}
 		j=jm1;
 		for (i=im; i<=ie; i++){
-			psiOld[i][j] = psiNew[i][j] = 0.0;//y[j]/4.0;
+			psiOld[i][j] = psiNew[i][j] = -(3.0/(8.0*(ym*ym)))*( (y0/3.0) - (y0/2.0) )*y0*y0 + c;
 			//psiOld[i][j] = psiOld[i][j+1];
 			//psiNew[i][j] = psiNew[i][j+1];
 		}
 		//PAREDE VERTICAL DIREITA:
 		i=im;
 		for (j=0; j<=jm1; j++){
-			psiOld[i][j] = psiNew[i][j] = 0.0;//y[j]/4.0;
+			psiOld[i][j] = psiNew[i][j] = -(3.0/(8.0*(ym*ym)))*( (y0/3.0) - (y0/2.0) )*y0*y0 + c;
 			//psiOld[i][j] = psiOld[i-1][j];
 			//psiNew[i][j] = psiNew[i-1][j];
 		}
 		for (j=jm2; j<=je; j++){
-			psiOld[i][j] = psiNew[i][j] = 1.0;//y[j]/4.0;
+			psiOld[i][j] = psiNew[i][j] = -(3.0/(8.0*(ym*ym)))*( (yf/3.0) - (yf/2.0) )*yf*yf + c;
 			//psiOld[i][j] = psiOld[i-1][j];
 			//psiNew[i][j] = psiNew[i-1][j];
 		}
