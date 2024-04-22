@@ -4,7 +4,6 @@
 
 #include "GaussSeidel.h"
 #include "ConjugateGradientMethod.h"
-
 #include "FuncoesAuxiliares.h"
 #include "Visualizacao.h"
 
@@ -14,9 +13,144 @@ typedef struct Indices {
 
 int main(){
 
-	double t0=0.0, tf = 10.0, x0=0.0, xf=8.0, y0=0.0, yf=4.0;
-	double xm=4.0, ymDown=1.5, ymUp=2.5;
-	int Nt=100000, Nx=80, Ny=40;
+	double t0, tf, x0, xf, y0, yf;
+	double xm, ymDown, ymUp;
+	int Nt, Nx, Ny;
+	int Geometria, Malha;
+
+	//-------------------------------------//						yf
+	//					/
+	//					/
+	//					/
+	//					/______________________________________//	ymUp
+	//										/
+	//										/
+	//										/
+	//					/---------------------------------------/	ymDown
+	//					/
+	//					/
+	//					/
+	//-------------------------------------//						y0										
+
+	//x0					xm					xf
+
+	//Informacoes do tempo:
+	t0 = 0.0;
+	tf = 10.0;
+	Nt = 100000;
+	//Dimensao da contracao:
+	//4L x 4L:	0
+	//8L x 8L:	1
+	//16L x 16L:	2
+	Geometria = 0;
+	//Malhas:
+	//M1 (dx=dy=0.1):	0
+	//M2 (dx=dy=0.05):	1
+	//M3 (dx=dy=0.025):	2
+	Malha = 1;
+	switch (Geometria){
+		case 0:
+			//4L x 4L
+			x0=0.0;
+			xm=4.0;
+			xf=8.0; 
+			y0=0.0; 
+			ymDown=1.5;
+			ymUp=2.5;
+			yf=4.0;
+			switch(Malha){
+				case 0:
+					//Malha M1: dx=dy=0.1
+					Nx=80; 
+					Ny=40;
+				break;
+				case 1:
+					//Malha M2: dx=dy=0.05
+					Nx=160;
+					Ny=80;
+				break;
+				case 2:
+					//Malha M3: dx=dy=0.025
+					Nx=320;
+					Ny=160;
+				break;
+				default:
+					printf("Selecionar a opcao de malha corretamente\n");
+					exit(1);
+				break;
+			}
+		break;
+		case 1:
+			//8L x 8L
+			x0=0.0;
+			xm=8.0;
+			xf=16.0; 
+			y0=0.0; 
+			ymDown=3.0;
+			ymUp=5.0;
+			yf=8.0;
+
+			switch(Malha){
+				case 0:
+					//Malha M1: dx=dy=0.1
+					Nx=160; 
+					Ny=80;
+				break;
+				case 1:
+					//Malha M2: dx=dy=0.05
+					Nx=320;
+					Ny=160;
+				break;
+				case 2:
+					//Malha M3: dx=dy=0.025
+					Nx=640;
+					Ny=320;
+				break;
+				default:
+					printf("Selecionar a opcao de malha corretamente\n");
+					exit(1);
+				break;
+			}
+		break;
+		case 2:
+			//16L x 16L
+			x0=0.0;
+			xm=16.0;
+			xf=32.0; 
+			y0=0.0; 
+			ymDown=3.0;
+			ymUp=5.0;
+			yf=8.0;
+
+			switch(Malha){
+				case 0:
+					//Malha M1: dx=dy=0.1
+					Nx=320; 
+					Ny=80;
+				break;
+				case 1:
+					//Malha M2: dx=dy=0.05
+					Nx=640;
+					Ny=160;
+				break;
+				case 2:
+					//Malha M3: dx=dy=0.025
+					Nx=1280;
+					Ny=320;
+				break;
+				default:
+					printf("Selecionar a opcao de malha corretamente\n");
+					exit(1);
+				break;
+			}
+
+		break;
+		default:
+			printf("Selecionar a opcao de geometria correta\n");
+			exit(1);
+		break;
+	}
+
 	double *x, *y, *t; 
 	double **uOld, **vOld, **psiOld, **omegaOld;
 	double **uNew, **vNew, **psiNew, **omegaNew;
@@ -37,10 +171,16 @@ int main(){
 	//Gauss-Seidel:			0
 	//Conjugate Gradient Method:	1
 	LinearSystem = 1;
-
+	//Espacamento da Malha:
 	dx = (xf-x0)/Nx;
 	dy = (yf-y0)/Ny;
 	dt = (tf-t0)/Nt;
+
+	printf("Parametros da Simulacao:\n");
+	printf("x0=%f, xm=%f, xf=%f\n", x0, xm, xf);
+	printf("y0=%f, ymDown=%f, ymUp=%f, yf=%f\n", y0, ymDown, ymUp, yf);
+	printf("t0=%f, tf=%f\n", t0, tf);
+	printf("dx=%f, dy=%f, dt=%f\n\n", dx, dy, dt);//getchar();
 
 	//Memory allocation --------------------------------
 	x = (double *)malloc(sizeof(double)*(Nx+1));
@@ -103,7 +243,7 @@ int main(){
 			omegaOld[i][j] = omegaNew[i][j] = 0.0;
 		}
 	}
-	printf("\n apos inicializacao Ny=%d\n\n \n", Ny);
+	//printf("\n apos inicializacao Ny=%d\n\n \n", Ny);
 	//Boundary conditions:
 	//INFLOW:
 	i=0;
@@ -216,7 +356,7 @@ int main(){
 	
 
 
-	//Dados para a resolução da equação de Poisson:
+	//Dados para a resolucao da equacao de Poisson:
 	double **A, *s, *b;
 	int iter;
 	A=(double **)malloc(sizeof(double *)*dim);
@@ -247,7 +387,6 @@ int main(){
 			//omegaOld[i][j] = (-85.0*psiOld[i][j] + 108.0*psiOld[i+1][j] - 27.0*psiOld[i+2][j] + 4.0*psiOld[i+3][j])/(18.0*dx*dx);
 			//psiOld[i][j] = psiOld[i+1][j] + dy*uOld[i][j];
 			//psiNew[i][j] = psiNew[i+1][j] + dy*uOld[i][j];
-
 		}
 		//printf("INFLOW\n");
 		//_______________
@@ -324,7 +463,7 @@ int main(){
 				//PAREDE DIREITA:											       
 				}else if ( (i==im-1) && ((j<=jm1) || (j>=jm2)) ){					
 					//ConvU = -u[i][j](omegaOld[i][j] - omegaOld[i-1][j])/(dx);//Diferenca regressiva
-					ConvU = -uOld[i][j]*(omegaOld[i+1][j] - omegaOld[i-1][j])/(2.0*dx);//Diferença centrada			 
+					ConvU = -uOld[i][j]*(omegaOld[i+1][j] - omegaOld[i-1][j])/(2.0*dx);//DiferenÃ§a centrada			 
 					/*													   
 					//UpWind													   
 					if (uOld[i][j] >= 0.0){
@@ -467,7 +606,7 @@ int main(){
 		//Sol. Eq. Poisson:
 		//################################################################
 		//_______________________________________
-		//Atualiza condição de contorno para psi:		
+		//Atualiza condicao de contorno para psi:		
 		//PAREDE VERTICAL ESQUERDA (INFLOW):
 		i=i0;
 		for (j=0; j<=je; j++){
@@ -521,7 +660,7 @@ int main(){
 			psiNew[i][j] = psiNew[i-1][j];
 		}
 		//________________________________________________________________
-		//Inicializa matriz dos coeficientes A, vetor b e chute inicial (tbm solução) s:
+		//Inicializa matriz dos coeficientes A, vetor b e chute inicial (tbm soluÃ§Ã£o) s:
 		for (i=0; i<dim; i++){
 			b[i] = 0.0;
 			s[i] = 0.0;
@@ -614,7 +753,7 @@ int main(){
 		*/
 		/*
 		//_______________________________
-		//Solução do sistema linear:
+		//Solucao do sistema linear:
 		//_______________________________
 		switch (LinearSystem){
 			case 0:
@@ -626,7 +765,7 @@ int main(){
 				iter = ConjugateGradientMethod(A, b, s, dim, 1.0e-06);
 			break;
 			default:
-				printf("Escolha um metodo válido para a resolução do sistema linear\n");
+				printf("Escolha um metodo vÃ¡lido para a resoluÃ§Ã£o do sistema linear\n");
 				exit(1);
 			break;
 		}
@@ -650,7 +789,7 @@ int main(){
 			//printf("%f\n", s[p]);getchar();
 			i=vec[p].i;
 			j=vec[p].j;
-			//psiNew[i][j] = s[p];
+			//psiNew[i][j] = s[p];//ESSA ATUALIZACAO DEVE SER DESCOMENTADA CASO QUEIRA RESOLVER POR SISTEMA LINEAR
 
 			//Calculo das velocidades:
 			//uNew[i][j] = (psiNew[i][j+1] - psiNew[i][j-1])/(2.0*dy);
@@ -659,7 +798,7 @@ int main(){
 		  	uNew[i][j] =   (psiNew[i][j+1] - psiNew[i][j-1])/(2.0*dy);
                         vNew[i][j] = - (psiNew[i+1][j] - psiNew[i-1][j])/(2.0*dx);
 
-			//Copia solução nova para velha:
+			//Copia soluÃ§Ã£o nova para velha:
 			omegaOld[i][j] = omegaNew[i][j];
 			psiOld[i][j] = psiNew[i][j];
 			uOld[i][j] = uNew[i][j];
@@ -670,7 +809,7 @@ int main(){
 		/*
 		for (i=1; i<ie; i++){
 			for (j=1; j<je; j++){
-				//Copia solução nova para velha:
+				//Copia soluÃ§Ã£o nova para velha:
 				omegaOld[i][j] = omegaNew[i][j];
 				psiOld[i][j] = psiNew[i][j];
 				uOld[i][j] = uNew[i][j];
@@ -687,7 +826,7 @@ int main(){
 
 	}//end while
 
-	//Vetores da equação de Poisson:
+	//Vetores da equaÃ§Ã£o de Poisson:
 	for (k=0; k<dim; k++)	{
 		free(A[k]);
 	}

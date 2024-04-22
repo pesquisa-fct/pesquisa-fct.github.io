@@ -11,7 +11,7 @@ void ImprimeArquivoVTK(double **u, double **v, double **p, double **psi, double 
     dy = (yf-y0) / Ny;
 
     //Criando os arquivos
-    sprintf(nomeArq, "../Results/Dados-N%d.vtk", n);
+    sprintf(nomeArq, "../Results/4Lx4L_M2_Re1/Dados-N%d.vtk", n);
 
     //open output file
     arq = fopen(nomeArq, "wt");
