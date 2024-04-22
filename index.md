@@ -5,36 +5,39 @@ As informações sobre a oferta da disciplina no período 2020.2 podem ser lidas
 Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 # Artigos
-- [2016 - Numerical study of the square-root conformation tensor formulation for confined and free-surface viscoelastic fluid flows](materiais/2016_Square_Root_Stabilization.pdf)
-- [2017 - Stresses of PTT, Giesekus, and Oldroyd-B fluids in a Newtonian velocity field near the stick-slip singularity](materiais/2017_Stick_Slip_Asymptotic_OldB_Newtonian.pdf)
-- [2019 - Numerical study of the stress singularity in stick-slip flow of the Phan-Thien Tanner and Giesekus fluids](materiais/2019_Stick_Slip_Numerics.pdf)
-- [2020 - Testing viscoelastic numerical schemes using the Oldroyd-B fluid in Newtonian kinmatics](materiais/2020_OldB_Newtonian_Velocity.pdf)
 - [2022 - Numerical verification of sharp corner behavior for Giesekus and Phan-Thien Tanner fluids](materiais/2022_Numerical_Verification.pdf)
-
+- [2020 - Testing viscoelastic numerical schemes using the Oldroyd-B fluid in Newtonian kinmatics](materiais/2020_OldB_Newtonian_Velocity.pdf)
+- [2019 - Numerical study of the stress singularity in stick-slip flow of the Phan-Thien Tanner and Giesekus fluids](materiais/2019_Stick_Slip_Numerics.pdf)
+- [2017 - Stresses of PTT, Giesekus, and Oldroyd-B fluids in a Newtonian velocity field near the stick-slip singularity](materiais/2017_Stick_Slip_Asymptotic_OldB_Newtonian.pdf)
+- [2016 - Numerical study of the square-root conformation tensor formulation for confined and free-surface viscoelastic fluid flows](materiais/2016_Square_Root_Stabilization.pdf)
 
 # Eventos
 
 ## Apresentações
-- [2022 - Análise numérica de escoamentos viscoelásticos com singularidades. IV CBJME - João Pessoa, Paraíba](materiais/2022_IV_CBJME_Apresentacao.pdf)
-- [2023 - Asymptotic and numerical investigations on viscoleastic fluid flows. 14th ISAAC - Ribeirão Preto, SP](materiais/2023_14thISAAC.pdf)
 - [2023 - Numerical and asymptotic study of stresses of PTT, Giesekus and Oldroyd-B near the stick-slip singularity. IWANASP 2023 - Régua, Portugal](materiais/IWANASP_2023.pdf)
+- [2023 - Asymptotic and numerical investigations on viscoleastic fluid flows. 14th ISAAC - Ribeirão Preto, SP](materiais/2023_14thISAAC.pdf)
+- [2022 - Análise numérica de escoamentos viscoelásticos com singularidades. IV CBJME - João Pessoa, Paraíba](materiais/2022_IV_CBJME_Apresentacao.pdf)
+- [2022 - Verificação numérica dos resultados assintóticos do escoamento viscoelástico Giesekus para o problema da contração 4:1. XLI CNMAC - Campinas, SP](materiais/2022_XLI_CNMAC_Apresentacao.pdf)
 
 ## Certificados
 - [2022 - Análise numérica de escoamentos viscoelásticos com singularidades. IV CBJME - João Pessoa, Paraíba](materiais/2022_IV_CBJME_Certificado.pdf)
+- [2022 - Verificação numérica dos resultados assintóticos do escoamento viscoelástico Giesekus para o problema da contração 4:1. XLI CNMAC - Campinas, SP](materiais/2022_XLI_CNMAC_Certificado_Apresentacao.pdf)
+
+# Tese
+- [2019 - Análise numérica de escoamentos com singularidades (ICMC/USP)](materiais/2019_IrineuLopesPalharesJunior_revisada.pdf)
+- [2015 - Estabilidade numérica em escoamentos viscoelásticos com alto número de Weissenberg (ICMC/USP)](materiais/2015_Irineu_Qualificacao_Doutorado.pdf)
 
 # Dissertação
 - [2014 - Decomposições matriciais para escoamentos viscoelásticos incompressíveis](materiais/2014_Irineu_Minha_Dissertacao.pdf)
 
-# Tese
-- [2015 - Estabilidade numérica em escoamentos viscoelásticos com alto número de Weissenberg (ICMC/USP)](materiais/2015_Irineu_Qualificacao_Doutorado.pdf)
-- [2019 - Análise numérica de escoamentos com singularidades (ICMC/USP)](materiais/2019_IrineuLopesPalharesJunior_revisada.pdf)
-
 # Projetos
 
 ## Iniciação Científica
-- [2022 - Estudo comparativo de métodos numéricos para sistemas lineares aplicados ao escoamento Newtoniano em uma cavidade bidimensional. Antônio Matheus da Silva Pontes (IMD/UFRN)](materiais/2022_AntonioMatheusPontes.pdf)
-- [2022 - Desenvolvimento de metodologias educacionais ativas com o microcontrolador Arduino no ensino de matemática. Silvia Goes Fernandes (IMD/UFRN)](materiais/2022_Arduino.pdf)
+
 - [2023 - Análise de escoamentos em uma contração 4:1 por meio da formulação corrente-vorticidade. Larissa Vitória Ribeiro de Andrade (FCT/UNESP)](materiais/PlanoTrabalhoIC.pdf)
+- [2022 - Desenvolvimento de metodologias educacionais ativas com o microcontrolador Arduino no ensino de matemática. Silvia Goes Fernandes (IMD/UFRN)](materiais/2022_Arduino.pdf)
+- [2022 - Estudo comparativo de métodos numéricos para sistemas lineares aplicados ao escoamento Newtoniano em uma cavidade bidimensional. Antônio Matheus da Silva Pontes (IMD/UFRN)](materiais/2022_AntonioMatheusPontes.pdf)
+
 ### Código para a solução do problema da contração por meio da formulação corrente-vorticidade.
 - [Arquivo main (Arquivo.c)](2023_Larissa_IC/main.c)
 - [Método dos Gradientes Conjugados (Arquivo.c)](2023_Larissa_IC/ConjugateGradientMethod.c)
