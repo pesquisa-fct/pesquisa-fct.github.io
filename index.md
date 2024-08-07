@@ -2,7 +2,7 @@
 As informações sobre a oferta da disciplina no período 2020.2 podem ser lidas no [Plano de Curso](https://drive.google.com/file/d/1P5gzhI-wrO_lZKLjTi2-reVs7j3ia8bb/view?usp=sharing). Uma live de dúvidas sobre esse plano pode ser assistida [aqui](https://drive.google.com/drive/folders/1H70yHhUw56rLBTXCzbOfJ-ODy1v9OkPd?usp=sharing). -->
 
 # Contato
-Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
+Email para contato:teste [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 # Artigos
 - [2022 - Numerical verification of sharp corner behavior for Giesekus and Phan-Thien Tanner fluids](materiais/2022_Numerical_Verification.pdf)
