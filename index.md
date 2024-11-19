@@ -26,6 +26,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [2022 - Verificação numérica dos resultados assintóticos do escoamento viscoelástico Giesekus para o problema da contração 4:1. XLI CNMAC - Campinas, SP](materiais/2022_XLI_CNMAC_Apresentacao.pdf)
 
 ## Certificados
+- [2023 - Asymptotic and numerical investigation on viscoelastic fluid flows. 14th ISAAC - Ribeirão Preto, São Paulo](materiais/2023_ISAAC.pdf)
 - [2022 - Análise numérica de escoamentos viscoelásticos com singularidades. IV CBJME - João Pessoa, Paraíba](materiais/2022_IV_CBJME_Certificado.pdf)
 - [2022 - Verificação numérica dos resultados assintóticos do escoamento viscoelástico Giesekus para o problema da contração 4:1. XLI CNMAC - Campinas, SP](materiais/2022_XLI_CNMAC_Certificado_Apresentacao.pdf)
 
