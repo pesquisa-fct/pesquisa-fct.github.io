@@ -8,7 +8,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [202? - The kernel-natural-stress formulation constitutive laws](materiais/The_kernel_natural_stress_formulation_constitutive_laws.pdf)
 - [2025 - Stress singularities of some common kernel transformed viscoelastic models](materiais/Kernel_Conformation_Singularities.pdf)
 - [2025 - The natural-conformation tensor constitutive laws](materiais/The_natural_conformation_tensor_constitutive_laws.pdf)
-- [2024 - Verificação numérica da singularidade do escoamento Newtoniano em uma contração 4:1 por meio da formulação corrente-vorticidade](materiais/FinalVersionBejom.pdf)
+- [2024 - Verificação numérica da singularidade do escoamento Newtoniano em uma contração 4:1 por meio da formulação corrente-vorticidade](materiais/2024_Verificacao_Contracao_CorrenteVorticidade.pdf)
 - [2022 - Numerical verification of sharp corner behavior for Giesekus and Phan-Thien Tanner fluids](materiais/2022_Numerical_Verification.pdf)
 - [2020 - Testing viscoelastic numerical schemes using the Oldroyd-B fluid in Newtonian kinmatics](materiais/2020_OldB_Newtonian_Velocity.pdf)
 - [2019 - Numerical study of the stress singularity in stick-slip flow of the Phan-Thien Tanner and Giesekus fluids](materiais/2019_Stick_Slip_Numerics.pdf)
