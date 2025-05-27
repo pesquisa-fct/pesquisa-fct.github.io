@@ -48,7 +48,8 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [2022 - Estudo comparativo de métodos numéricos para sistemas lineares aplicados ao escoamento Newtoniano em uma cavidade bidimensional. Antônio Matheus da Silva Pontes (IMD/UFRN)](materiais/2022_AntonioMatheusPontes.pdf)
 
 ### Código para a solução do problema da contração por meio da formulação corrente-vorticidade.
-- [Arquivo main (Arquivo.c)](2023_Larissa_IC/main.c)
+- [Arquivo main - Contração 4:1 (Arquivo.c)](2023_Larissa_IC/main.c)
+- [Arquivo main - Poiseuille (Arquivo.c)](materiais/Poiseuille.c)
 - [Método dos Gradientes Conjugados (Arquivo.c)](2023_Larissa_IC/ConjugateGradientMethod.c)
 - [Método dos Gradientes Conjugados (Arquivo.h)](2023_Larissa_IC/ConjugateGradientMethod.h)
 - [Método de Gauss-Seidel (Arquivo.c)](2023_Larissa_IC/GaussSeidel.c)
