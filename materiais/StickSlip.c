@@ -774,7 +774,7 @@ int main(){
 			i=vec[p].i;
 			j=vec[p].j;
 			//psiNew[i][j] = s[p];//ESSA ATUALIZACAO DEVE SER DESCOMENTADA CASO QUEIRA RESOLVER POR SISTEMA LINEAR
-
+			//printf("i=%d, j=%d, x=%f, y=%f\n", i, j, x[i], y[j]);getchar();
 			//Calculo das velocidades:
 			//uNew[i][j] = (psiNew[i][j+1] - psiNew[i][j-1])/(2.0*dy);
 			//vNew[i][j] = -(psiNew[i+1][j] - psiNew[i-1][j])/(2.0*dx);
@@ -790,6 +790,34 @@ int main(){
 			pOld[i][j] = pNew[i][j];
 
 		}
+		//Atualizar contorno de u:
+		j=j0;//parede inferior
+		for (i=i0; i<-im; i++){			
+		  	uNew[i][j] = uOld[i][j] = 0.0;//(psiNew[i][j+1] - psiNew[i][j])/(dy);
+                        vNew[i][j] = vOld[i][j] = 0.0;//- (psiNew[i+1][j] - psiNew[i-1][j])/(2.0*dx);
+		}
+		for (i=im+1; i<Nx; i++){			
+		  	uNew[i][j] = uOld[i][j] = (psiNew[i][j+1] - psiNew[i][j])/(dy);
+                        vNew[i][j] = vOld[i][j] = 0.0;//- (psiNew[i+1][j] - psiNew[i-1][j])/(2.0*dx);
+		}
+		j=je;//parede superior
+		for (i=i0; i<=im; i++){
+		  	uNew[i][j] = uOld[i][j] = 0.0;//(psiNew[i][j] - psiNew[i][j-1])/(dy);
+                        vNew[i][j] = vOld[i][j] = 0.0;//- (psiNew[i+1][j] - psiNew[i-1][j])/(2.0*dx);
+		}
+		for (i=im+1; i<Nx; i++){
+		  	uNew[i][j] = uOld[i][j] = (psiNew[i][j] - psiNew[i][j-1])/(dy);
+                        vNew[i][j] = vOld[i][j] = 0.0;//- (psiNew[i+1][j] - psiNew[i-1][j])/(2.0*dx);
+		}
+		//Outflow
+		i=ie;
+		for (j=j0; j<=je; j++){
+			uOld[i][j] = uOld[i-1][j];
+			uNew[i][j] = uNew[i-1][j];
+			vOld[i][j] = vOld[i-1][j];
+			vNew[i][j] = vNew[i-1][j];
+		}
+
 		/*
 		for (i=1; i<ie; i++){
 			for (j=1; j<je; j++){
