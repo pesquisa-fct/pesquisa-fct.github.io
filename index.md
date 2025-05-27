@@ -50,6 +50,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 ### Código para a solução do problema da contração por meio da formulação corrente-vorticidade.
 - [Arquivo main - Contração 4:1 (Arquivo.c)](2023_Larissa_IC/main.c)
 - [Arquivo main - Poiseuille (Arquivo.c)](materiais/Poiseuille.c)
+- [Arquivo main - Poiseuille (Arquivo.c)](materiais/StickSlip.c)
 - [Método dos Gradientes Conjugados (Arquivo.c)](2023_Larissa_IC/ConjugateGradientMethod.c)
 - [Método dos Gradientes Conjugados (Arquivo.h)](2023_Larissa_IC/ConjugateGradientMethod.h)
 - [Método de Gauss-Seidel (Arquivo.c)](2023_Larissa_IC/GaussSeidel.c)
