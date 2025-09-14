@@ -6,7 +6,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 # Artigos
 - [202? - The kernel-natural-stress formulation constitutive laws](materiais/The_kernel_natural_stress_formulation_constitutive_laws.pdf)
-- [2025 - Analysis of Newtonian fluid flows around sharp corners with slip boundary conditions](materiais/Slip_Submission.pdf)
+- [2025 - Analysis of Newtonian fluid flows around sharp corners with slip boundary conditions](materiais/2025_NewtonianSlipPaper.pdf)
 - [2025 - Stress singularities of some common kernel transformed viscoelastic models](materiais/Kernel_Conformation_Singularities.pdf)
 - [2025 - The natural-conformation tensor constitutive laws](materiais/The_natural_conformation_tensor_constitutive_laws.pdf)
 - [2024 - Verificação numérica da singularidade do escoamento Newtoniano em uma contração 4:1 por meio da formulação corrente-vorticidade](materiais/2024_Verificacao_Contracao_CorrenteVorticidade.pdf)
@@ -94,3 +94,4 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 --- -->
 Encontrou algum erro ou tem alguma sugestão? Por favor, comunique-nos mandando um e-mail para o endereço [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br) com a sua contribuição e identificação com nome e turma. Agradecemos a sua colaboração.
+
