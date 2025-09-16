@@ -85,6 +85,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 ## Cálculo de autovalores e autovetores
 - [Potencia (Inversa e com Deslocamento) (Arquivo.c)](materiais/MetodoPotencia.c)
 - [Potencia (Inversa e com Deslocamento) (Arquivo.h)](materiais/MetodoPotencia.h)
+- [Método QR (Arquivo.c)](materiais/DecomposicaoQR.c)
 
 ## Funções auxiliares
 - [Norma, Multiplicação de matriz, Determinante, ect. (Arquivo.c)](materiais/FuncoesAuxiliares.c)
@@ -94,4 +95,5 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 --- -->
 Encontrou algum erro ou tem alguma sugestão? Por favor, comunique-nos mandando um e-mail para o endereço [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br) com a sua contribuição e identificação com nome e turma. Agradecemos a sua colaboração.
+
 
