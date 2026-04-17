@@ -49,6 +49,7 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 ### Código para a solução do problema da contração por meio da formulação corrente-vorticidade.
 - [Arquivo main - Contração 4:1 (Arquivo.c)](materiais/Contraction.c)
+- [Arquivo main - Expansão 1:4 (Arquivo.c)](materiais/Expansion.c)
 - [Arquivo main - Poiseuille (Arquivo.c)](materiais/Poiseuille.c)
 - [Arquivo main - Stick-Slip (Arquivo.c)](materiais/StickSlip.c)
 - [Método dos Gradientes Conjugados (Arquivo.c)](materiais/ConjugateGradientMethod.c)
@@ -65,7 +66,10 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [Pós-processamento dos arquivos vtk (PosProcessamento.c)](2023_Larissa_IC/PosProcessamento.c)
 
 # Códigos
-- [Arquivo main.c](materiais/main.c)
+- [Arquivo main - Contração 4:1 (Arquivo.c)](materiais/Contraction.c)
+- [Arquivo main - Expansão 1:4 (Arquivo.c)](materiais/Expansion.c)
+- [Arquivo main - Poiseuille (Arquivo.c)](materiais/Poiseuille.c)
+- [Arquivo main - Stick-Slip (Arquivo.c)](materiais/StickSlip.c)
 - [Makefile](/materiais/makefile)
   
 ## Solução de sistemas lineares
@@ -92,6 +96,8 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [Norma, Multiplicação de matriz, Determinante, ect. (Arquivo.h)](materiais/FuncoesAuxiliares.h)
 
 ## Funções de visualização
+- [Função para criação dos arquivos VTK (Arquivo.c)](materiais/Visualizacao.c)
+- [Função para criação dos arquivos VTK (Arquivo.h)](materiais/Visualizacao.h)
 
 --- -->
 Encontrou algum erro ou tem alguma sugestão? Por favor, comunique-nos mandando um e-mail para o endereço [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br) com a sua contribuição e identificação com nome e turma. Agradecemos a sua colaboração.
