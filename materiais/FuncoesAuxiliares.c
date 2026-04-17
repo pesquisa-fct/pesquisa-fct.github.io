@@ -3,9 +3,9 @@
 double Norm(double *v, int n){
 
 	double value=0.0;
-
+	//printf("dim=%d\n", n);
 	for (int i=0; i<n; i++){
-		value += value + v[i]*v[i];
+		value += v[i]*v[i];
 	}
 	value = sqrt(value);
 
@@ -67,6 +67,44 @@ double *MatrixProduct(double **A, double *v, int n){
 	return prod;
 
 	free(prod);
+}
+
+void MatrixProductPenta(double Centro, double DirEsq, double CimaBaixo, double *v, double *prod, int Ny, int n){
+	int linha;
+	//double *prod;
+	int resto;
+	//prod = (double *)malloc(sizeof(double)*n);
+
+	for (linha=0; linha<n; linha++){
+		prod[linha] = Centro*v[linha];
+
+		//resto = linha%(Ny-2);		
+		//if ((linha != n-1) && (linha%(Ny-2)!=0))
+		//printf("linha=%d, Ny-2=%d, resto=%d\n\n", linha, (Ny-2), resto);//getchar();
+		
+		//printf("linha=%d, Centro\n", linha);
+		if (linha ==0 || ((linha+1)%(Ny-1)!=0)){
+			prod[linha] += DirEsq*v[linha+1];
+			//printf("linha=%d, Direita\n", linha);
+		}
+		if ((linha%(Ny-1)!=0)){
+			prod[linha] += DirEsq*v[linha-1];
+			//printf("linha=%d, Esquerda\n", linha);
+		}
+		if ( (linha-(Ny-1)) >= 0){
+			prod[linha] += CimaBaixo*v[linha - (Ny-1)];
+			//printf("linha=%d, Baixo\n", linha);
+		}
+		if ( (linha+(Ny-1)) <= n-1){
+			prod[linha] += CimaBaixo*v[linha + (Ny-1)];		
+			//printf("linha=%d, Cima\n", linha);
+		}
+		//getchar();
+	}
+
+	//return prod;
+
+	//free(prod);
 }
 
 //Essa funcao tem por objetivo calcular as matrizes menores, usadas no calculo do determinante, por meio 

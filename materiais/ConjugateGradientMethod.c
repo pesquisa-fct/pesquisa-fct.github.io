@@ -22,6 +22,7 @@ int ConjugateGradientMethod(double **A, double *b, double *v, int n, double tol)
 			sum += A[i][j]*v[j];
 		}
 		r[i] = sum - b[i];
+		//printf("A*v[%d]=%f\n", i, sum);getchar();
 	}
 	//____________________
 	//Inicial Direction

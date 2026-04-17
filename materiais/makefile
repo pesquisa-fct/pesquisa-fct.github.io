@@ -1,2 +1,2 @@
 all:
-	gcc main.c ConjugateGradientMethod.c FuncoesAuxiliares.c GaussianElimination.c GradientMethod.c LUdecomposition.c SistemasTriangulares.c SOR.c MetodoPotencia.c -o main -lm
+	cc -g Visualizacao.c GaussSeidel.c FuncoesAuxiliares.c ConjugateGradientMethod.c Contraction.c -o main -lm
