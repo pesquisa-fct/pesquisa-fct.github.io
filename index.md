@@ -47,7 +47,8 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [2022 - Desenvolvimento de metodologias educacionais ativas com o microcontrolador Arduino no ensino de matemática. Silvia Goes Fernandes (IMD/UFRN)](materiais/2022_Arduino.pdf)
 - [2022 - Estudo comparativo de métodos numéricos para sistemas lineares aplicados ao escoamento Newtoniano em uma cavidade bidimensional. Antônio Matheus da Silva Pontes (IMD/UFRN)](materiais/2022_AntonioMatheusPontes.pdf)
 
-### Código para a solução do problema da contração por meio da formulação corrente-vorticidade.
+# Códigos
+## Código para a solução do problema da contração/expansão/stick-slip (Newtoniano/Viscorelástico) por meio da formulação corrente-vorticidade com condição no-slip/slip.
 - [Arquivo main - Contração 4:1 (Arquivo.c)](materiais/Contraction.c)
 - [Arquivo main - Expansão 1:4 (Arquivo.c)](materiais/Expansion.c)
 - [Arquivo main - Poiseuille (Arquivo.c)](materiais/Poiseuille.c)
@@ -65,12 +66,8 @@ Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 - [Plote das figuras (Figures.py)](2023_Larissa_IC/Figures.py)
 - [Pós-processamento dos arquivos vtk (PosProcessamento.c)](2023_Larissa_IC/PosProcessamento.c)
 
-# Códigos
-- [Arquivo main - Contração 4:1 (Arquivo.c)](materiais/Contraction.c)
-- [Arquivo main - Expansão 1:4 (Arquivo.c)](materiais/Expansion.c)
-- [Arquivo main - Poiseuille (Arquivo.c)](materiais/Poiseuille.c)
-- [Arquivo main - Stick-Slip (Arquivo.c)](materiais/StickSlip.c)
-- [Makefile](/materiais/makefile)
+## Physics-Informed Neural Networks (PINNs)
+- [Poisson 1D - tensorflow (Arquivo.py)](materiais/Poisson1D.py)
   
 ## Solução de sistemas lineares
 - [Decomposição LU (Arquivo.c)](materiais/LUdecomposition.c)
