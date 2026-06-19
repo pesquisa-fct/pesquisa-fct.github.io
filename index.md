@@ -5,6 +5,7 @@ As informações sobre a oferta da disciplina no período 2020.2 podem ser lidas
 Email para contato: [irineu.palhares@unesp.br](mailto:irineu.palhares@unesp.br).
 
 # Artigos
+- [202? - Analysis of viscoelastic PTT and Giesekus flows around sharp corner with slip bondary conditions](materiais/Viscoelastic_Slip_paper_2026.pdf)
 - [202? - The kernel-natural-stress formulation constitutive laws](materiais/The_kernel_natural_stress_formulation_constitutive_laws.pdf)
 - [2026 - Stress singularities of some common kernel transformed viscoelastic models](materiais/2026_KernelSingularities.pdf)
 - [2025 - The natural-conformation tensor constitutive laws](materiais/2025_NaturalConformation.pdf)
